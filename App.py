@@ -36,7 +36,7 @@ if st.button("🚀 প্রশ্নপত্র জেনারেট কর�
     else:
         try:
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-pro')
+            model = genai.GenerativeModel('gemini-1.5-flash-latest')
             
             with st.spinner("প্রশ্ন তৈরি হচ্ছে... অনুগ্রহ করে কিছুটা সময় অপেক্ষা করুন..."):
                 prompt = f"""
